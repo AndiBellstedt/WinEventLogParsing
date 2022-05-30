@@ -1,0 +1,12 @@
+﻿TOPIC
+    about_WinEventLogParsing
+
+SHORT DESCRIPTION
+    A little module for parsing Windows EventLog records
+
+LONG DESCRIPTION
+    WinEventLogParsing is a module for parsing EventLog records, queried by 'Get-WinEvent'
+    to more detailed and flatten powersell objects.
+
+KEYWORDS
+    EventLog WindowsEventLog EventLogParsing EventParser Parser

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Types>
+    <!-- System.Diagnostics.Eventing.Reader.EventLogRecord.ActiveDirectory_DomainService.ID1644 -->
+    <Type>
+        <Name>System.Diagnostics.Eventing.Reader.EventLogRecord.ActiveDirectory_DomainService.ID1644</Name>
+        <Members>
+            <AliasProperty>
+                <Name>LDAPServer</Name>
+                <ReferencedMemberName>MachineName</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>ComputerName</Name>
+                <ReferencedMemberName>MachineName</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>EventId</Name>
+                <ReferencedMemberName>Id</ReferencedMemberName>
+            </AliasProperty>
+            <!--
+            <ScriptProperty>
+                <Name></Name>
+                <GetScriptBlock>
+
+                </GetScriptBlock>
+            </ScriptProperty>
+            -->
+            <CodeProperty IsHidden="true">
+                <Name>SerializationData</Name>
+                <GetCodeReference>
+                    <TypeName>PSFramework.Serialization.SerializationTypeConverter</TypeName>
+                    <MethodName>GetSerializationData</MethodName>
+                </GetCodeReference>
+            </CodeProperty>
+        </Members>
+        <TypeConverter>
+            <TypeName>PSFramework.Serialization.SerializationTypeConverter</TypeName>
+        </TypeConverter>
+    </Type>
+    <Type>
+        <Name>Deserialized.System.Diagnostics.Eventing.Reader.EventLogRecord.ActiveDirectory_DomainService.ID1644</Name>
+        <Members>
+            <MemberSet>
+                <Name>PSStandardMembers</Name>
+                <Members>
+                    <NoteProperty>
+                        <Name>
+                            TargetTypeForDeserialization
+                        </Name>
+                        <Value>
+                            System.Diagnostics.Eventing.Reader.EventLogRecord.ActiveDirectory_DomainService.ID1644
+                        </Value>
+                    </NoteProperty>
+                </Members>
+            </MemberSet>
+        </Members>
+    </Type>
+
+</Types>
