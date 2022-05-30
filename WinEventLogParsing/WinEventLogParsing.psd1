@@ -3,7 +3,7 @@
     RootModule        = 'WinEventLogParsing.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '0.0.1'
+    ModuleVersion     = '1.0.0'
 
     # ID used to uniquely identify this module
     GUID              = '21f6dc40-b3c0-4087-9f38-c4a51edceb7a'

@@ -48,14 +48,15 @@
             <ScriptProperty>
                 <Name>ClientIP</Name>
                 <GetScriptBlock>
-                    ConvertFrom-ClientField -Data $this.Properties[4].Value -Client
+                    $this.Properties[4].Value.replace(":$($this.Properties[4].Value.Split(":")[-1])", '')
                 </GetScriptBlock>
             </ScriptProperty>
 
             <ScriptProperty>
                 <Name>ClientPort</Name>
                 <GetScriptBlock>
-                    ConvertFrom-ClientField -Data $this.Properties[4].Value -Port
+                    $result = $this.Properties[4].Value.Split(":")[-1]
+                    if($result -eq $this.Properties[4].Value) { "" } else { $result }
                 </GetScriptBlock>
             </ScriptProperty>
 
