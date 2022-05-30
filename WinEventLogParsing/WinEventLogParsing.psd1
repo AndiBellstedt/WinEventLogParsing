@@ -38,7 +38,7 @@
     FormatsToProcess  = @('xml\WinEventLogParsing.Format.ps1xml')
 
     # Functions to export from this module
-    FunctionsToExport = ''
+    FunctionsToExport = 'Format-WinEvent'
 
     # Cmdlets to export from this module
     CmdletsToExport   = ''

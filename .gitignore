@@ -1,0 +1,20 @@
+
+# ignore the settings folder and files for VSCode and PSS
+.vscode/*
+*.psproj
+*TempPoint*
+
+# Ignore staging info from Visual Studio
+library/WinEventLogParsing/.vs/*
+library/WinEventLogParsing/WinEventLogParsing/bin/*
+library/WinEventLogParsing/WinEventLogParsing/obj/*
+
+# ignore PowerShell Studio MetaData
+WinEventLogParsing/WinEventLogParsing.psproj
+WinEventLogParsing/WinEventLogParsing.psproj.bak
+WinEventLogParsing/WinEventLogParsing.psprojs
+WinEventLogParsing/WinEventLogParsing.psproj
+
+
+# ignore pester test result files
+TestResults/*

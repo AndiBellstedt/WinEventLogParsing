@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Types>
+    <!-- System.Diagnostics.Eventing.Reader.EventLogRecord.Microsoft-Windows-ActiveDirectory_DomainService.ID1644 -->
+    <Type>
+        <Name>System.Diagnostics.Eventing.Reader.EventLogRecord.Microsoft-Windows-ActiveDirectory_DomainService.ID1644</Name>
+        <Members>
+            <AliasProperty>
+                <Name>LDAPServer</Name>
+                <ReferencedMemberName>MachineName</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>ComputerName</Name>
+                <ReferencedMemberName>MachineName</ReferencedMemberName>
+            </AliasProperty>
+            <AliasProperty>
+                <Name>EventId</Name>
+                <ReferencedMemberName>Id</ReferencedMemberName>
+            </AliasProperty>
+
+            <ScriptProperty>
+                <Name>StartingNode</Name>
+                <GetScriptBlock>
+                    $this.Properties[0].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>Filter</Name>
+                <GetScriptBlock>
+                    $this.Properties[1].Value.trim()
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>VisitedEntries</Name>
+                <GetScriptBlock>
+                    $this.Properties[2].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>ReturnedEntries</Name>
+                <GetScriptBlock>
+                    $this.Properties[3].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>ClientIP</Name>
+                <GetScriptBlock>
+                    ConvertFrom-ClientField -Data $this.Properties[4].Value -Client
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>ClientPort</Name>
+                <GetScriptBlock>
+                    ConvertFrom-ClientField -Data $this.Properties[4].Value -Port
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>SearchScope</Name>
+                <GetScriptBlock>
+                    $this.Properties[5].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>AttributeSelection</Name>
+                <GetScriptBlock>
+                    $this.Properties[6].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>ServerControls</Name>
+                <GetScriptBlock>
+                    $this.Properties[7].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>UsedIndexes</Name>
+                <GetScriptBlock>
+                    $this.Properties[8].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>PagesReferenced</Name>
+                <GetScriptBlock>
+                    $this.Properties[9].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>PagesReadFromDisk</Name>
+                <GetScriptBlock>
+                    $this.Properties[10].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>PagesPreReadFromDisk</Name>
+                <GetScriptBlock>
+                    $this.Properties[11].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>CleanPagesModified</Name>
+                <GetScriptBlock>
+                    $this.Properties[12].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>DirtyPagesModified</Name>
+                <GetScriptBlock>
+                    $this.Properties[13].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>SearchTimeMS</Name>
+                <GetScriptBlock>
+                    $this.Properties[14].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>AttributesPreventingOptimization</Name>
+                <GetScriptBlock>
+                    $this.Properties[15].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <ScriptProperty>
+                <Name>User</Name>
+                <GetScriptBlock>
+                    $this.Properties[16].Value
+                </GetScriptBlock>
+            </ScriptProperty>
+
+
+            <!--
+            <ScriptProperty>
+                <Name></Name>
+                <GetScriptBlock>
+
+                </GetScriptBlock>
+            </ScriptProperty>
+
+            <CodeProperty IsHidden="true">
+                <Name>SerializationData</Name>
+                <GetCodeReference>
+                    <TypeName>PSFramework.Serialization.SerializationTypeConverter</TypeName>
+                    <MethodName>GetSerializationData</MethodName>
+                </GetCodeReference>
+            </CodeProperty>
+            -->
+        </Members>
+        <!--
+        <TypeConverter>
+
+            <TypeName>PSFramework.Serialization.SerializationTypeConverter</TypeName>
+
+        </TypeConverter>
+        -->
+    </Type>
+    <!--
+    <Type>
+        <Name>Deserialized.System.Diagnostics.Eventing.Reader.EventLogRecord.Microsoft-Windows-ActiveDirectory_DomainService.ID1644</Name>
+        <Members>
+            <MemberSet>
+                <Name>PSStandardMembers</Name>
+                <Members>
+                    <NoteProperty>
+                        <Name>
+                            TargetTypeForDeserialization
+                        </Name>
+                        <Value>
+                            System.Diagnostics.Eventing.Reader.EventLogRecord.Microsoft-Windows-ActiveDirectory_DomainService.ID1644
+                        </Value>
+                    </NoteProperty>
+                </Members>
+            </MemberSet>
+        </Members>
+    </Type>
+    -->
+</Types>
